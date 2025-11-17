@@ -1,4 +1,4 @@
-# 🌟 100 Days of DSA — Consistency, Discipline & Growth
+# 🌟 100 Days of DSA - Consistency, Discipline & Growth
 
 **By Gungun Juneja**
 
