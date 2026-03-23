@@ -11,6 +11,7 @@ Welcome to my 100 Days of Data Structures & Algorithms journey. This is my commi
 I wanted to:
 * Remove the fear of complex problems
 * Build a consistent coding routine
+* Build strong problem solving skills
 * Stop waiting for the "perfect time"
 
 So I committed publicly to:
