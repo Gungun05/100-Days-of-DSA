@@ -30,3 +30,41 @@ All elements of candidates are distinct.
 1 <= target <= 40
 */
 
+//Solution
+
+class Solution {
+public:
+    void solve(int index, vector<int>& candidates, int target, 
+               vector<int>& current, vector<vector<int>>& result) {
+        
+        // ✅ Base case
+        if (target == 0) {
+            result.push_back(current);
+            return;
+        }
+        
+        // ❌ Out of bounds
+        if (index >= candidates.size()) {
+            return;
+        }
+
+        // ✅ Pick the element (if it does not exceed target)
+        if (candidates[index] <= target) {
+            current.push_back(candidates[index]);
+            solve(index, candidates, target - candidates[index], current, result);
+            current.pop_back(); // backtrack
+        }
+
+        // ❌ Skip the element
+        solve(index + 1, candidates, target, current, result);
+    }
+
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        vector<vector<int>> result;
+        vector<int> current;
+        
+        solve(0, candidates, target, current, result);
+        
+        return result;
+    }
+};
