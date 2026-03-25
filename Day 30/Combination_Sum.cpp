@@ -52,7 +52,7 @@ public:
         if (candidates[index] <= target) {
             current.push_back(candidates[index]);
             solve(index, candidates, target - candidates[index], current, result);
-            current.pop_back(); // backtrack
+            current.pop_back();  // backtrack
         }
 
         // ❌ Skip the element
