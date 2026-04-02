@@ -54,8 +54,7 @@ public:
             solve(index, candidates, target - candidates[index], current, result);
             current.pop_back();  // backtrack
         }
-
-        // ❌ Skip the element
+     
         solve(index + 1, candidates, target, current, result);
     }
 
