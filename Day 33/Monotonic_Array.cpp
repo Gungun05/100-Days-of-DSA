@@ -12,6 +12,8 @@ nums[i] >= nums[j]
 Given an integer array nums, return true if the array is monotonic, otherwise return false.
 */
 
+
+
 class Solution {
 public:
     bool isMonotonic(vector<int>& nums) {
