@@ -62,7 +62,6 @@ public:
                 result[i] = nums[newIndex];
             }
         }
-
         return result;
     }
 };
