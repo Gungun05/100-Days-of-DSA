@@ -48,6 +48,8 @@ Time Complexity: O(n)
 Space Complexity: O(n)
 */
 
+//solution
+
 class Solution {
 public:
     vector<int> constructTransformedArray(vector<int>& nums) {
