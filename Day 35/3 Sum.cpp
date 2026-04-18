@@ -7,6 +7,7 @@ public:
             
             if (i>0 && arr[i] == arr[i-1]) {
                 continue;
+                
             }
             int st=i + 1;
             int end=arr.size()-1;
