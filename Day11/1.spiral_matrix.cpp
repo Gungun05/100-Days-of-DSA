@@ -45,6 +45,7 @@ vector<int> spiralOrder(vector<vector<int>> &matrix) {
             ans.push_back(matrix[top][i]);
         }
         top++;
+        
 
         // Move top → bottom
         for (int i = top; i <= bottom; i++) {
